@@ -319,7 +319,7 @@ a:hover {
    
    }
 
-@media  (min-width:300px) {
+@media  ( min-width:300px) and (max-width:1000px) {
     .social-media {
         display: flex;
         flex-direction: column;
