@@ -162,7 +162,7 @@ a:hover {
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 40px;
-    position:relative;
+   
 }
 
 /*animação do menu*/
@@ -261,7 +261,6 @@ a:hover {
     height: 10px;
     width: 15px;
     display: block;
-    
     transition: 0.3s;
 }
 
@@ -311,15 +310,14 @@ a:hover {
     background: linear-gradient(75deg, #9f42c05f, #085078,#4ca59b, #1fa194);
     background-size: 300% 300%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     animation: backgroundTransition 8s ease-in-out infinite;
-    position: relative;
+    position: absolute;
    
    }
 
-@media  ( min-width:300px) and (max-width:1000px) {
+@media  ( min-width:250px)  and (max-width:1000px){
     .social-media {
         display: flex;
         flex-direction: column;
@@ -329,13 +327,15 @@ a:hover {
         margin-top: 0;
     }
 
-    .card-container {
-       flex-direction:column-reverse;
+    .card-container{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column-reverse;
     }
-
-    .container .card-container:nth-child(1),
-    .container .card-container:nth-child(2) {
-        flex-direction:column-reverse;
+    .container .card-container:nth-child(2),
+    .container .card-container:nth-child(1) {
+        flex-direction:column;
+        
     }
     .card {
         height: 250px;
@@ -353,23 +353,19 @@ a:hover {
         width: 200px;
     }
 
-    .pagina-projetos {
-        
-        justify-content: center;
-    }
+   
     .container2{
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
         
-    .hh{
+   .h1{
        text-align: center;
+       
     }
-    .inicio{
-       justify-content:flex-end;
-    }
-
+ 
   
     .card1{
         
@@ -386,20 +382,54 @@ a:hover {
         height: 250px;
         width: 250px;
     }   
-  
+   .card4{
+       height: 250px;
+       width: 250px;
+   }
+   .card5{
+       height: 250px;
+       width: 250px;
+   }
+   .card6{
+       height: 250px;
+       width: 250px;
+   }
+   
+   .certificados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   }
+   .certificados a {
+       text-decoration: none;
+      
+       
+       
+   }
+ 
 }
+   
+  
+
+
 
 /*Pagina projetos*/
 
 
 
 
+
 .container2 {
     display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    margin-top: 100px;
+ 
     
-    padding: 2px ;
-    margin:  8px ;
-    justify-content: space-around;
+
+
 }
 
 
@@ -412,6 +442,7 @@ a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
      
    
    }
@@ -419,13 +450,13 @@ a:hover {
 
 
  .card2 {
-    height: 200px;
-    width: 350px;
-    margin: 3rem 0 0;
-    background-image: url(./img/img2.jpg); 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+     height: 200px;
+     width: 350px;
+     margin: 3rem 0 0;
+     background-image: url(./img/img2.jpg); 
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
    
    }
  
@@ -438,7 +469,36 @@ a:hover {
      background-repeat: no-repeat;
      background-size: cover;     
    }
-
+   .card4 {
+    height: 200px;
+    width: 350px;
+    margin: 3rem 0 0;
+    background-image: url(./img/img4.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;     
+  }
+  .card5{
+    height: 200px;
+    width: 350px;
+    margin: 3rem 0 0;
+    background-image: url(./img/img5.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+  }
+  .card6{
+    height: 200px;
+    width: 350px;
+    margin: 3rem 0 0;
+    background-image: url(./img/img6.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+  }
+  a {
+     text-decoration: none;
+  }
 .card1:hover{
     transform: scale(1.8);
     
@@ -451,6 +511,15 @@ a:hover {
     transform: scale(1.8);
     
 }
+.card4:hover{
+    transform: scale(1.8);
+}
+.card5:hover{
+    transform: scale(1.8);
+}
+.card6:hover{
+    transform: scale(1.8);
+}
          
 
 .inicio {
@@ -460,38 +529,54 @@ a:hover {
 }
 .inicio a {
     
-    border: 1px solid #2e1c2b;
+   
     border-radius: 8%;
     text-decoration: none;
     color: #085078;
     font-size: 30px;
-    display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bolder;
     padding: 2px;
+    margin-bottom: 10px;
         
 }
 .inicio a:hover{
     background-color: #085078;
     color: white;
+    
 }
 
-.hh{
+.h1{
     color: #085078;
     font-weight: bolder;
     text-align: center;
     margin-bottom: 7%;
-}
-.pagina-projetos{
-    padding: 15px;
+    
 }
 
 
 .titulo{
     color: #085078;
+    font-size: 1.2rem;
     font-weight: bolder;
     text-align: center;
+    
+
+}
+
+/*Pagina certificados*/
+
+.certificados   {
+    display: flex;
+    justify-content:center;
+    margin: 20px  ;
+    padding: 20px ;
+
+    
+}
+.certificados a {
+    text-decoration: none;
     
 
 }
