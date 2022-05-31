@@ -193,7 +193,7 @@ a:hover {
 }
 
 #toggle:checked ~ .menu {
-    box-shadow: -280px 80px 0px 90vh white;
+    box-shadow: -250px 30px 1px 90vh white;
     z-index: 1;
 }
 
@@ -348,7 +348,7 @@ a:hover {
     .card {
         height: 250px;
         width: 250px;
-        
+        filter:none;
         
     }
 
@@ -404,6 +404,14 @@ a:hover {
        height: 250px;
        width: 250px;
    }
+   .card7{
+       height: 250px;
+       width: 250px;
+   }
+   .card8{
+    height: 250px;
+    width: 250px;
+}
    
    .certificados {
     display: flex;
@@ -507,6 +515,24 @@ a:hover {
     background-repeat: no-repeat;
     background-size: cover;  
   }
+  .card7{
+    height: 200px;
+    width: 350px;
+    margin: 3rem 0 0;
+    background-image: url(./img/img7.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+  }
+  .card8{
+    height: 200px;
+    width: 350px;
+    margin: 3rem 0 0;
+    background-image: url(./img/img8.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+  }
   a {
      text-decoration: none;
   }
@@ -531,7 +557,12 @@ a:hover {
 .card6:hover{
     transform: scale(1.8);
 }
-         
+.card7:hover{
+    transform: scale(1.8);
+}
+.card8:hover{
+    transform: scale(1.8);
+}         
 
 .inicio {
  display: flex;
@@ -540,7 +571,6 @@ a:hover {
 }
 .inicio a {
     
-   
     border-radius: 8%;
     text-decoration: none;
     color: #085078;
